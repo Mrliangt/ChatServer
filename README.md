@@ -15,7 +15,7 @@ Project：
         
 创建数据库表的mysql代码：
 -- 用户表
-'''mysql
+```mysql
 DROP TABLE IF EXISTS `User`;
 CREATE TABLE `User` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -24,7 +24,7 @@ CREATE TABLE `User` (
   `state` ENUM('online', 'offline') NOT NULL DEFAULT 'offline',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-'''
+```
 
 -- 好友表（双向关系可各插一条）
 DROP TABLE IF EXISTS `Friend`;
