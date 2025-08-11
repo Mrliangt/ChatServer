@@ -3,16 +3,16 @@
 
 ## 项目结构
 Project：
-        bin/                 --存放可执行文件
-        lib/                 --存放库文件
-        include/             --存放头文件
-        src/                 --存放源文件
-        build/               --存放编译文件
-        example/
-        thirdparty/
-        CMakeList.txt
-        autobuild.sh
-        ReadME.md
+        bin/                 --存放可执行文件       <br />
+        lib/                 --存放库文件           <br />
+        include/             --存放头文件            <br />
+        src/                 --存放源文件             <br />
+        build/               --存放编译文件          <br />
+        example/                                    <br />
+        thirdparty/                                   <br />
+        CMakeList.txt                                 <br />
+        autobuild.sh                                   <br />
+        ReadME.md                                       <br />
         
 创建数据库表的mysql代码：
 -- 用户表
