@@ -67,9 +67,9 @@ CREATE TABLE `OfflineMessage` (
 ```
 
 
-测试json用例     张三登录消息{"msgid":1,"id":1,"password":"123456"} 
-                 李四注册消息{"msgid":3,"name":"li si","password":"666666"}
-                 李四登录消息{"msgid":1,"id":2,"password":"666666"}
-                 一对一聊天消息{"msgid":5,"id":1,"from":"zhang san","to":2,"msg":"hello2"}  --zhang san ->li si
-                              {"msgid":5,"id":2,"from":"li si","to":1,"msg":"你好"}       --li si-> zhang san
-                张三添加好友{"msgid":6,"id":1,"friendid":2}
+测试json用例     张三登录消息{"msgid":1,"id":1,"password":"123456"}  <br />
+                 李四注册消息{"msgid":3,"name":"li si","password":"666666"} <br />
+                 李四登录消息{"msgid":1,"id":2,"password":"666666"} <br />
+                 一对一聊天消息{"msgid":5,"id":1,"from":"zhang san","to":2,"msg":"hello2"}  --zhang san ->li si  <br />
+                              {"msgid":5,"id":2,"from":"li si","to":1,"msg":"你好"}       --li si-> zhang san    <br />
+                张三添加好友{"msgid":6,"id":1,"friendid":2}                    <br />
