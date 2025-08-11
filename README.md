@@ -27,14 +27,17 @@ CREATE TABLE `User` (
 ```
 
 -- 好友表（双向关系可各插一条）
+```mysql
 DROP TABLE IF EXISTS `Friend`;
 CREATE TABLE `Friend` (
   `userid` INT NOT NULL,
   `friendid` INT NOT NULL,
   PRIMARY KEY (`userid`, `friendid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
 
 -- 组表
+```mysql
 DROP TABLE IF EXISTS `AllGroup`;
 CREATE TABLE `AllGroup` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -42,8 +45,10 @@ CREATE TABLE `AllGroup` (
   `groupdesc` VARCHAR(200) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
 
 -- 组用户关联表
+```mysql
 DROP TABLE IF EXISTS `GroupUser`;
 CREATE TABLE `GroupUser` (
   `groupid` INT NOT NULL,
@@ -51,14 +56,15 @@ CREATE TABLE `GroupUser` (
   `grouprole` ENUM('creator', 'normal') NOT NULL DEFAULT 'normal',
   PRIMARY KEY (`groupid`, `userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+```
 -- 离线消息表
+```mysql
 DROP TABLE IF EXISTS `OfflineMessage`;
 CREATE TABLE `OfflineMessage` (
   `userid` INT NOT NULL,
   `message` VARCHAR(500) NOT NULL -- 存 JSON 字符串
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+```
 
 
 测试json用例     张三登录消息{"msgid":1,"id":1,"password":"123456"} 
